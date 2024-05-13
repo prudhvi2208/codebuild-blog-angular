@@ -9,6 +9,10 @@ phases:
   pre_build:
     commands:
       - npm install
+  test:
+    commands:
+      - ng test --no-watch --no-progress --browsers=ChromeHeadlessCI
+
   build:
     commands:
       - ng build --prod
